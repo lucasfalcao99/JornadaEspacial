@@ -1,0 +1,164 @@
+<!doctype html>
+<html>
+<head>
+<title>Questão 13</title>	
+</head>
+
+<script type="text/javascript">
+function fvoltar(){
+		window.location = "Questão12.html"
+	}
+	function favancar(){
+		window.location = "Questão14.html";
+	}
+	function validar(){  
+		var n1 = document.getElementById('a').checked;
+		var n2 = document.getElementById('b').checked;
+		var n3 = document.getElementById('c').checked;
+		var n4 = document.getElementById('d').checked;
+		if(n1==true){
+			document.texto.textosaida.value = "Errado. Atuaram forças sim..."	
+		}	
+		if(n2==true){			
+			document.texto.textosaida.value = "Errado. Na verdade ela atuou, apenas foi de baixa intensidade. "				
+		}	
+		if(n3==true){
+			document.texto.textosaida.value = "Errado. Ao contrário..."			
+		}	
+		if(n4==true){
+		    document.texto.textosaida.value = "Correto. "		
+		}			
+	}
+	
+	function apagar(){
+	     document.texto.textosaida.value = "" 		 
+	}
+</script>
+	
+<style type="text/css">
+#estilo1{
+	top:10px;
+	width:740px;
+	border:solid rgb(200,200,200) 2px;
+	padding:6px 20px 40px 10px;	
+	font-family:verdana;
+	font-size:16px;
+	line-height:200%;
+	text-align:justify;	
+}
+#titulo1{
+	background-color:#EAEAEA;
+	border-radius:50px;		
+	font-weight: bold;
+	text-align:center;
+	letter-spacing:6px		
+}
+#estilo3{		
+	font-family:verdana;
+	font-size:14px;
+	line-height:200%;
+	text-align:justify;			
+
+position:relative;		
+left:10px;
+top:10px;	
+width:700px;
+height:650px;
+border:solid rgb(100,100,100) 3px;
+border-radius:10px;	
+padding:0px 15px 0px 15px;
+}
+#titulo{
+	background-color:#EAEAEA; 
+	border:solid #666 0px;	
+	border-radius:10px;		
+	font-weight: bold;
+	text-align:center;
+	letter-spacing:6px				
+}
+#estilo4{
+	top:10px;
+	width:693px;	
+	padding:0px;
+	font-family:verdana;
+	font-size:17px;
+	line-height:200%;
+	text-align:<justify>;	
+}
+#botao{
+        font-size:10px;
+        font-family:Verdana,Helvetica;
+        font-weight:bold;
+        color:white;
+        background:#638cb5;
+        border:0px;
+		border-radius:5px;
+        width:80px;
+        height:25px;
+	}
+	
+	#botao_inativo{
+        font-size:10px;
+        font-family:Verdana,Helvetica;
+        font-weight:bold;
+        color:white;
+        background:rgb(200,200,200);
+        border:0px;
+		border-radius:5px;
+        width:80px;
+        height:25px;
+	}
+</style>
+<center>
+	<div id="estilo1">
+        <p id="titulo1">
+<div id="estilo3" > 
+<p id="titulo">Física</p>
+<div id = "estilo4">     
+	 <p><justify> 13.Uma folha de papel está sobre a mesa do professor. Sobre ela está um apagador. Dando-se, com violência, um puxão horizontal na folha de papel, esta se movimenta e o apagador fica sobre a mesa. Uma explicação aceitável para a ocorrência é:</p>	
+<br>	 	 
+	 <form>
+		<p>
+			<label>
+				<input type="radio" name="opcao" id="a" onclick="javascript:apagar()"> A) nenhuma força atuou sobre o apagador.    </input>
+			</label>
+		</p>
+	
+		<p>
+			<label>
+				<input type="radio" name="opcao" id="b" onclick="javascript:apagar()"> B) a força de atrito entre o apagador e o papel só atua em movimentos lentos.   </input>
+			</label>
+		</p>
+
+		<p>
+			<label>
+				<input type="radio" name="opcao" id="c" onclick="javascript:apagar()"> C) a força de atrito entre o papel e a mesa é muito intensa.  </input>
+			</label>
+		</p>
+
+		<p>
+			<label>
+				<input type="radio" name="opcao" id="d" onclick="javascript:apagar()"> D) a força de atrito entre o apagador e o papel provoca, no apagador, uma aceleração muito inferior à da folha de papel.
+ </input>
+			</label>
+		</p>		
+	</form>
+<form name = "texto" onSubmit = "avaliar()">
+	
+<input type="button" onclick="javascript:validar()"  value="Confirmar"/> 
+			
+<br>
+		
+Comentário: <input type = "text" name = "textosaida" size ="90" disabled = "disabled" value = "Marque uma alternativa"/>
+<div style= "position:absolute; left:550px; top:560px">
+	<input id="botao" type="button" value="Voltar" onClick="fvoltar()">
+	<input id="botao" type="button" value="Avançar" onClick="favancar()">
+</div>
+		
+</form>	
+	
+ </div> 
+ <body>
+	
+</body>
+</html>

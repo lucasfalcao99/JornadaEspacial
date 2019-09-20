@@ -1,0 +1,82 @@
+.btn {
+  -webkit-transition: all 150ms ease-out;
+          transition: all 150ms ease-out;
+  display: inline-block;
+  padding: 7px 20px;
+  background: white;
+  border-radius: 1px;
+  margin: 5px;
+  outline: none;
+  font-family: "Open Sans", sans-serif;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 700;
+  color: rgba(0, 0, 0, 0.7);
+  border: 1px solid #5A5858;
+}
+.btn:hover {
+  background: #f7f7f7;
+}
+.btn:active {
+  background: #ebebeb;
+  outline: none;
+}
+
+.btn-padrao:hover {
+  border: 1px solid gray;
+}
+
+.btn-verde {
+  border: 1px solid #2ecc71;
+  color: white;
+  background: #2ecc71;
+}
+.btn-verde:hover {
+  background: #2cc46c;
+}
+.btn-verde:active {
+  background: #27af61;
+}
+
+.btn-vermelho {
+  border: 1px solid #d14233;
+  color: white;
+  background: #d14233;
+}
+.btn-vermelho:hover {
+  background: #c43a2c;
+}
+.btn-vermelho:active {
+  background: #b33528;
+}
+
+.btn-laranja {
+  border: 1px solid #ff6a07;
+  color: white;
+  background: #ff6a07;
+}
+.btn-laranja:hover {
+  background: #ec5e00;
+}
+.btn-laranja:active {
+  background: #dd5800;
+}
+
+.btn-round {
+  border-radius: 20px;
+}
+
+.btn-sem-bg {
+  background-color: transparent;
+  font-weight: 400;
+  color: black;
+}
+.btn-verde.btn-sem-bg {
+  color: #2ecc71 !important;
+}
+.btn-sem-bg:hover {
+  background-color: transparent;
+}
+.btn-sem-bg:active {
+  background-color: transparent;
+}

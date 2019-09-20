@@ -1,0 +1,163 @@
+﻿<!doctype html>
+<html>
+<head>
+<meta charset = "UTF-8"></meta>
+<title>Questão 31</title>	
+</head>
+
+<script type="text/javascript">
+	function fvoltar(){
+		window.location = "Questão30.html"
+	}
+	function favancar(){
+		window.location = "Questão32.html";
+	}
+	function validar(){  
+		var n1 = document.getElementById('a').checked;
+		var n2 = document.getElementById('b').checked;
+		var n3 = document.getElementById('c').checked;
+		var n4 = document.getElementById('d').checked;
+		if(n1==true){
+			document.texto.textosaida.value = "Errado."	
+		}	
+		if(n2==true){			
+			document.texto.textosaida.value = "Errado."				
+		}	
+		if(n3==true){
+			document.texto.textosaida.value = "Errado."			
+		}	
+		if(n4==true){
+		    document.texto.textosaida.value = "Correta."		
+		}			
+	}
+	
+	function apagar(){
+	     document.texto.textosaida.value = "" 		 
+	}
+</script>
+	
+<style type="text/css">
+#estilo1{
+	top:10px;
+	width:740px;
+	border:solid rgb(200,200,200) 2px;
+	padding:6px 20px 40px 10px;	
+	font-family:verdana;
+	font-size:16px;
+	line-height:200%;
+	text-align:justify;	
+}
+#titulo1{
+	background-color:#EAEAEA;
+	border-radius:50px;		
+	font-weight: bold;
+	text-align:center;
+	letter-spacing:6px		
+}
+#estilo3{		
+	font-family:verdana;
+	font-size:14px;
+	line-height:200%;
+	text-align:justify;			
+
+position:relative;		
+left:10px;
+top:10px;	
+width:700px;
+height:600px;
+border:solid rgb(100,100,100) 3px;
+border-radius:10px;	
+padding:0px 15px 0px 15px;
+}
+#titulo{
+	background-color:#EAEAEA; 
+	border:solid #666 0px;	
+	border-radius:10px;		
+	font-weight: bold;
+	text-align:center;
+	letter-spacing:6px				
+}
+#estilo4{
+	top:10px;
+	width:693px;	
+	padding:0px;
+	font-family:verdana;
+	font-size:17px;
+	line-height:200%;
+	text-align:<justify>;	
+}
+#botao{
+        font-size:10px;
+        font-family:Verdana,Helvetica;
+        font-weight:bold;
+        color:white;
+        background:#638cb5;
+        border:0px;
+		border-radius:5px;
+        width:80px;
+        height:25px;
+	}
+	
+	#botao_inativo{
+        font-size:10px;
+        font-family:Verdana,Helvetica;
+        font-weight:bold;
+        color:white;
+        background:rgb(200,200,200);
+        border:0px;
+		border-radius:5px;
+        width:80px;
+        height:25px;
+	}
+</style>
+<center>
+	<div id="estilo1">
+        <p id="titulo1">
+<div id="estilo3" > 
+<p id="titulo">Física</p>
+<div id = "estilo4">     
+	 <p>31.Um automóvel parte do repouso e adquire movimento retilíneo com aceleração constante de módulo a=2,0 m/s². Qual a velocidade desse automóvel em Km/h, após um percurso de 100 mts ? </p>
+	 <form>
+		<p>
+			<label>
+				<input type="radio" name="opcao" id="a" onclick="javascript:apagar()"> A) 18 Km/h</input>
+			</label>
+		</p>
+	
+		<p>
+			<label>
+				<input type="radio" name="opcao" id="b" onclick="javascript:apagar()"> B) 36Km/h</input>
+			</label>
+		</p>
+
+		<p>
+				<input type="radio" name="opcao" id="c" onclick="javascript:apagar()"> C) 56Km/h</input>
+			<label>
+			</label>
+		</p>
+
+		<p>
+			<label>
+				<input type="radio" name="opcao" id="d" onclick="javascript:apagar()"> D) 72 Km/h</input>
+			</label>
+		</p>		
+	</form>
+<form name = "texto" onSubmit = "avaliar()">
+	
+<input type="button" onclick="javascript:validar()"  value="Confirmar"/> 
+			
+<br>
+		
+Comentário: <input type = "text" name = "textosaida" size ="20" disabled = "disabled" value = "Marque uma alternativa"/>
+<div style= "position:absolute; left:550px; top:560px">
+	<input id="botao" type="button" value="Voltar" onClick="fvoltar()">
+	<input id="botao" type="button" value="Avançar" onClick="favancar()">
+</div>
+		
+</form>	
+	
+ </div> 
+ <body>
+	
+</body>
+</html>
